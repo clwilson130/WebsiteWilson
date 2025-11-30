@@ -8,6 +8,7 @@ html {
   background: #abc;
   font-size: 1.125rem;
   font-family: sans-serif;
+  height: 100%
 }
 
 main{
@@ -42,15 +43,16 @@ header{
 }
 
 footer {
-  position: absolute;
+  position: sticky;
   bottom: 0;
 }
 
 main, body, html{
-  background: #abc;
+  background-image: url('pictures/background.png');
   position: relative;
-  height: 100%;
-  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .intro p{
