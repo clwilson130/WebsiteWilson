@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+main, body, html{
+  background-image: url('pictures/background.png');
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.post{
+  background: rgba(68, 66, 66, 0.281); 
+}
+
