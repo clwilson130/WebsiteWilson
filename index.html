@@ -1,82 +1,150 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Website Wilson</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website Wilson | Chris's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-
-
 <body>
-  
-  <header>
-    <div id="navbar" class="header-right">
-      <div class="header-buttons">
-        <button><a href="Blog/index.html" class="dropdown">Blog</a></button>
 
-        <div class="dropdown">
-          <button class="dropbtn" class="center">Games</button>
-          
-          <div class="dropdown-content">
-            <a href="Snake Game/index.html">Snake Game</a>
-          </div>
-        </div>
-        
-    </div>
-    
-    <div class="header-middle">
-    </div>
-      
-    <div class="header-left">
-      <a href="#top"><img src="pictures/logotranny.png" class="logo" alt="logo" width="80px" height="80px" ></a>
-    </div>
-  </header>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="brand">Website Wilson<span>.</span></a>
 
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
 
+                <div class="dropdown">
+                    <button class="dropbtn">Games ▾</button>
 
-  <main>
+                    <div class="dropdown-content">
+                        <a href="Snake Game/index.html">Snake Game</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <section id="welcome-section">
-      <div>
-        <h1>Welcome to Website Wilson!</h1>
-      </div>
-      <div class="intro">
-        <img src="pictures/CommonChrisW.png">
-        <p>Hi! my name is Chris and I am an aspiring software devoloper. 
-          Right now my website looks like hot ass. give it time im just getting a skeleton for the website real quick i'll polish it later.<br>&nbsp;
-          <br>Scroll down to find projects im working on or have finished.
-        </p>
-      </div>
+    <main>
 
-      <div>
+        <!-- Welcome section -->
+        <section id="home" class="welcome">
 
-      </div>
-    </section>
+            <p class="eyebrow">ASPIRING SOFTWARE DEVELOPER</p>
 
-    <section id="projects">
-    <h2>Projects!</h2>
-      <div class="html cert">
-        <p>2024/4/24</p>
-        <p>First accomplishment! (of many)</p>
-        <img src="pictures/cert.png">
-      </div>
+            <h1>Welcome to Website Wilson<span>.</span></h1>
 
-      <div class="html cert">
-        <p>N/A</p>
-        <p>N/A</p>
-        <img src="pictures/cert2.png">
-      </div>
-    </section>
-    
-  </main>
-  
+            <p class="subtitle">
+                Learning, building, breaking things, and figuring it out.
+            </p>
+
+            <a href="#projects" class="button">Explore my projects ↓</a>
+
+        </section>
 
 
-  <footer id="footr" class="footer">
-    <p>© 2024 -<i> made by C-Rizzle</i></p>
-  </footer>
+        <!-- About section -->
+        <section id="about" class="section">
+
+            <h2>About Me</h2>
+
+            <div class="intro">
+
+                <img src="pictures/CommonChrisW.png"
+                     alt="Illustration of Chris">
+
+                <div class="intro-text">
+                    <h3>Hey, I'm Chris!</h3>
+
+                    <p>
+                        I'm an aspiring software developer interested in
+                        programming, technology, and building things.
+                    </p>
+
+                    <p>
+                        This website is where I'll document my progress,
+                        showcase projects, and share things I've learned
+                        along the way.
+                    </p>
+
+                    <p>
+                        I'm still learning, so expect things to change
+                        as I improve. This is just the beginning!
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects section -->
+        <section id="projects" class="section">
+
+            <h2>My Projects</h2>
+
+            <p class="section-description">
+                A collection of things I've built and accomplishments
+                along the way.
+            </p>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+
+                    <img src="pictures/cert.png"
+                         alt="First programming accomplishment">
+
+                    <div class="project-info">
+                        <p class="project-date">April 24, 2024</p>
+
+                        <h3>First Accomplishment</h3>
+
+                        <p>
+                            My first milestone on the road to becoming
+                            a software developer.
+                        </p>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card">
+
+                    <img src="pictures/cert2.png"
+                         alt="Second programming accomplishment">
+
+                    <div class="project-info">
+                        <p class="project-date">Coming soon</p>
+
+                        <h3>Next Milestone</h3>
+
+                        <p>
+                            More projects and accomplishments will
+                            be added here as I continue learning.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Website Wilson — Made by <i>C-Rizzle</i></p>
+    </footer>
 
 </body>
 </html>
