@@ -14,6 +14,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 90px;
+    overflow-y: scroll;
 }
 
 body {
@@ -75,6 +76,7 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 15px 30px;
+    height: 76px;
 
     display: flex;
     justify-content: space-between;
@@ -198,21 +200,37 @@ header {
 }
 
 .button {
-    display: inline-block;
-    padding: 12px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
+    height: 44px;
+    min-height: 44px;
+    padding: 0 25px;
+
+    box-sizing: border-box;
+    border: none;
     border-radius: 6px;
-    background: #2563eb;
 
+    background: #2563eb;
     color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1;
     text-decoration: none;
+    white-space: nowrap;
 
     transition: background 0.2s, transform 0.2s;
 }
 
+
+
 .button:hover {
     background: #3b82f6;
-    transform: translateY(-3px);
+    color: #ffffff !important;
+    transform: scale(1.05);
 }
 
 
@@ -244,13 +262,21 @@ header {
    ABOUT SECTION
 ========================= */
 
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 400px;
+    margin-bottom: 100px;
+}
+
 .intro {
     display: flex;
     align-items: center;
     justify-content: center;
 
     gap: 50px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .intro img {
@@ -278,6 +304,12 @@ header {
     line-height: 1.8;
 }
 
+.intro-text a {
+    color: #60a5fa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
 
 /* =========================
    PROJECTS
@@ -287,6 +319,11 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    direction: rtl;
+}
+
+.project-grid > * {
+    direction: ltr;
 }
 
 .project-card {
