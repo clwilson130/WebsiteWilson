@@ -1,23 +1,157 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>2026-3-13</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>March 13, 2026 | Website Wilson</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 20px;
+            background-color: #0b0f19;
+            color: #e2e8f0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+        }
+
+        .logo {
+            display: block;
+            width: 65px;
+            height: 65px;
+            object-fit: contain;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 50px auto;
+        }
+
+        .back-link {
+            color: #38bdf8;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: clamp(30px, 5vw, 42px);
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 23px;
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        .post {
+            background-color: #111827;
+            border: 1px solid #263244;
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .post p {
+            color: #cbd5e1;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .post-navigation {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 25px;
+        }
+
+        .post-navigation a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .post-navigation a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .container {
+                margin: 30px auto;
+            }
+
+            .post {
+                padding: 20px;
+            }
+
+            .post p {
+                font-size: 15px;
+            }
+        }
+    </style>
 </head>
 
 <body>
- <div class="header-left">
-      <a href="../index.html"><img src="../pictures/logotranny.png" class="logo" alt="logo" width="80px" height="80px" ></a>
-    </div>
-<h1>2026-3-13</h1>
 
-<div class="post">
-    <h2>Blog</h2>
-    <p>Today I created a blog section for my website. It's pretty bare bones right now but i plan to update this every day around 4pm UTC+0.
-        I plan on saying what i've worked on for the day and what im going to accomplish by the end of the week. right now my goal was to get the blog up and working and it is.
-    comments system eventually, but that requires back end and this is a static github site lol. i want to finish the website. i know html and css but im not a good designer. functionality is my main goal anyways. after blog page is complete i'll get to work
-    on creating the page for the main game and a devlog similar to the blog.
- </p>
-    <a href="2026-3-14.html">Tommorrow</a>
-</div>
+    <header>
+        <a href="../index.html">
+            <img src="../pictures/logotranny.png"
+                 class="logo"
+                 alt="Website Wilson logo">
+        </a>
+    </header>
+
+    <main class="container">
+
+        <a href="index.html" class="back-link">← Back to blog</a>
+
+        <h1>March 13, 2026</h1>
+
+        <article class="post">
+
+            <h2>Blog</h2>
+
+            <p>
+                Today I created a blog section for my website.
+                It's pretty bare bones right now, but I plan to
+                update this every day around 4pm UTC+0.
+
+                I plan on saying what I've worked on for the day
+                and what I'm going to accomplish by the end of
+                the week. Right now my goal was to get the blog
+                up and working, and it is.
+
+                A comments system eventually, but that requires
+                a backend and this is a static GitHub site lol.
+                I want to finish the website first.
+
+                I know HTML and CSS, but I'm not a good designer.
+                Functionality is my main goal anyways.
+
+                After the blog page is complete, I'll get to work
+                on creating the page for the main game and a
+                devlog similar to the blog.
+            </p>
+
+        </article>
+
+        <nav class="post-navigation">
+            <a href="2026-3-14.html">Next post →</a>
+        </nav>
+
+    </main>
+
 </body>
 </html>

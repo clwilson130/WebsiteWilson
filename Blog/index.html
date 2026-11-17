@@ -1,41 +1,132 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" href="styles.css">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Website Wilson</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blog | Website Wilson</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-
-
 <body>
-  
-  <header>
-    <div id="navbar" class="header-right">
-     
-        
-    </div>
-    
-    <div class="header-middle">
-    </div>
-      
-    <div class="header-left">
-      <a href="../index.html"><img src="pictures/logotranny.png" class="logo" alt="logo" width="80px" height="80px" ></a>
-    </div>
-  </header>
- <h1 class="title">Blog</h1>
-<div class="main">
-        <div class="post">
-        <h2>2026-3-14</h2>
-        <p>WIP.</p>
-        <a href="posts/2026-3-14.html">Read more</a>
 
-            
-        <h2>2026-3-13</h2>
-        <p>Today I created a blog section for my website.</p>
-        <a href="posts/2026-3-13.html">Read more</a>
-    </div>
-</div>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="brand">
+                Website Wilson<span>.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#projects">Projects</a>
+                <a href="index.html" class="active">Blog</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Games ▾</button>
+
+                    <div class="dropdown-content">
+                        <a href="../Snake Game/index.html">Snake Game</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Blog Introduction -->
+        <section class="blog-hero">
+
+
+            <h1>Blog<span>.</span></h1>
+
+            <p class="blog-subtitle">
+            </p>
+
+        </section>
+
+
+        <!-- Blog Posts -->
+        <section class="blog-section">
+
+            <div class="blog-section-heading">
+                <div>
+                    <h2>Recent Posts</h2>
+                </div>
+
+                <span class="post-count">2 POSTS</span>
+            </div>
+
+
+            <div class="blog-grid">
+
+                <!-- Latest Post -->
+                <article class="blog-card">
+
+                    <div class="post-meta">
+                        <span class="post-category">Development</span>
+                        <span>March 14, 2026</span>
+                    </div>
+
+                    <h3>
+                        <a href="posts/2026-3-14.html">
+                            My Development Journey
+                        </a>
+                    </h3>
+
+                    <p>
+                        A look at what I've been working on,
+                        what I've learned, and what's coming next.
+                    </p>
+
+                    <a class="read-more" href="posts/2026-3-14.html">
+                        Read article <span>→</span>
+                    </a>
+
+                </article>
+
+
+                <!-- Previous Post -->
+                <article class="blog-card">
+
+                    <div class="post-meta">
+                        <span class="post-category">Website</span>
+                        <span>March 13, 2026</span>
+                    </div>
+
+                    <h3>
+                        <a href="posts/2026-3-13.html">
+                            Creating My Blog
+                        </a>
+                    </h3>
+
+                    <p>
+                        Today I created a blog section for my website.
+                        This is where I'll start documenting my progress.
+                    </p>
+
+                    <a class="read-more" href="posts/2026-3-13.html">
+                        Read article <span>→</span>
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Website Wilson — Made by <i>C-Rizzle</i></p>
+    </footer>
+
 </body>
 </html>
