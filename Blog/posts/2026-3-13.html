@@ -1,17 +1,11 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
+ <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>March 13, 2026 | Website Wilson</title>
-
+    <title>2026-3-13</title>
     <style>
         * {
             box-sizing: border-box;
-        }
+        } 
 
         body {
             margin: 0;
@@ -30,18 +24,8 @@
         }
 
         .container {
-            max-width: 750px;
+            max-width: 80%;
             margin: 50px auto;
-        }
-
-        .back-link {
-            color: #38bdf8;
-            text-decoration: none;
-            font-size: 14px;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
         }
 
         h1 {
@@ -68,20 +52,20 @@
             margin: 0;
         }
 
-        .post-navigation {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 25px;
-        }
+    .post-navigation {
+      display: flex;
+      justify-content: right;
+      margin-top: 25px;
+    }
 
-        .post-navigation a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
+    .post-navigation a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
 
-        .post-navigation a:hover {
-            text-decoration: underline;
-        }
+    .post-navigation a:hover {
+      text-decoration: underline;
+    }
 
         @media (max-width: 600px) {
             body {
@@ -105,24 +89,18 @@
 
 <body>
 
-    <header>
+    <div class="header-left">
         <a href="../index.html">
-            <img src="../pictures/logotranny.png"
-                 class="logo"
-                 alt="Website Wilson logo">
+            <img src="../pictures/logotranny.png" class="logo" alt="logo">
         </a>
-    </header>
+    </div>
 
     <main class="container">
 
-        <a href="index.html" class="back-link">← Back to blog</a>
+        <h1>2026-3-13</h1>
 
-        <h1>March 13, 2026</h1>
-
-        <article class="post">
-
+        <div class="post">
             <h2>Blog</h2>
-
             <p>
                 Today I created a blog section for my website.
                 It's pretty bare bones right now, but I plan to
@@ -144,8 +122,7 @@
                 on creating the page for the main game and a
                 devlog similar to the blog.
             </p>
-
-        </article>
+        </div>
 
         <nav class="post-navigation">
             <a href="2026-3-14.html">Next post →</a>

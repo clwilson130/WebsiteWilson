@@ -24,7 +24,7 @@
         }
 
         .container {
-            max-width: 750px;
+            max-width: 80%;
             margin: 50px auto;
         }
 
@@ -61,21 +61,26 @@
             font-size: 16px;
             margin: 0;
         }
-
-        .post-navigation {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 25px;
+        .post-img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
+    .post-navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
 
-        .post-navigation a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
+    .post-navigation a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
 
-        .post-navigation a:hover {
-            text-decoration: underline;
-        }
+    .post-navigation a:hover {
+      text-decoration: underline;
+    }
 
         @media (max-width: 600px) {
             body {
@@ -101,6 +106,7 @@
  <div class="header-left">
       <a href="../index.html"><img src="../pictures/logotranny.png" class="logo" alt="logo" width="80px" height="80px" ></a>
     </div>
+<main class="container">
 <h1>2026-3-14</h1>
 
 <div class="post">
@@ -108,13 +114,15 @@
     <p>
         did pretty much nothing today and i'll do pretty much nothing tomorrow, here is a website i made on freecodecamp today, they gave me 100% for it
  </p>
-    <img src="../pictures/workday1.png">
+    <img src="../pictures/workday1.png" class="post-img">
     <p>the image is a gif so you had to be there to really experience it</p>
     
 
 </div>
-        <nav class="post-navigation">
-            <a href="2026-3-15.html">Next post →</a>
-        </nav>
+    <nav class="post-navigation">
+      <a href="2026-3-13.html">← Previous post</a>
+      <a href="2026-3-15.html">Next post →</a>
+    </nav>
+</main>
 </body>
 </html>
